@@ -26,7 +26,13 @@
  */
  body {  
    margin-top: 5%; 
-} 
+}
+
+.table-content {
+  font-style: oblique;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: hsla(250, 30%, 94%, .5);
+}
 
 .bootstrap-switch {
   display: inline-block;
