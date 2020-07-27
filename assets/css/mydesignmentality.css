@@ -3678,7 +3678,7 @@ p {
 .description,
 .card-description,
 .footer-big p {
-  color: #9A9A9A;
+  color: #2c2c2c;
   font-weight: 300; }
 
 .category {
@@ -3690,7 +3690,7 @@ p {
   color: #f96332 !important; }
 
 .text-info {
-  color: #2CA8FF !important; }
+  color: #2c2c2c !important; }
 
 .text-success {
   color: #18ce0f !important; }
@@ -10351,4 +10351,4 @@ Created using IcoMoon - icomoon.io
     top: 66%;
     right: 14%; } }
 
-/*# sourceMappingURL=now-ui-kit.css.map */
+/*# sourceMappingURL=mydesignmentality.css.map */
