@@ -3678,8 +3678,8 @@ p {
 .description,
 .card-description,
 .footer-big p {
-  color: #2c2c2c;
-  font-weight: 300; }
+  color: #FFFFFF;
+}
 
 .category {
   text-transform: capitalize;
@@ -3690,7 +3690,7 @@ p {
   color: #f96332 !important; }
 
 .text-info {
-  color: #2c2c2c !important; }
+  color: #FFFFFF !important; }
 
 .text-success {
   color: #18ce0f !important; }
