@@ -62,6 +62,19 @@
   transform: translate(-50%, -50%);
 }
 
+.fade-scale {
+  transform: scale(0);
+  opacity: 0;
+  -webkit-transition: all .25s linear;
+  -o-transition: all .25s linear;
+  transition: all .25s linear;
+}
+
+.fade-scale.in {
+  opacity: 1;
+  transform: scale(1);
+}
+
 @media only screen and (max-width: 320px) {
 
   .table-content {
@@ -5114,7 +5127,8 @@ Created using IcoMoon - icomoon.io
     padding-right: 24px;
     padding-bottom: 16px;
     padding-left: 24px;
-    line-height: 1.9; }
+    line-height: 1.9;
+    color: black}
   .modal-content .modal-footer {
     border-top: none;
     padding-right: 24px;

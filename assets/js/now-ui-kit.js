@@ -27,6 +27,18 @@ var navbar_initialized,
     toggle_initialized = false;
 
 $(document).ready(function() {
+
+    $("#solarEclipsPoem").hover(function() {
+        $("#solarEclipsModal").modal('show');
+    }, function(){
+        $("#solarEclipsModal").modal('hide');
+    });
+    $("#solarEclipsPoem").click(function() {
+        $("#solarEclipsModal").modal('show');
+    }, function(){
+        $("#solarEclipsModal").modal('hide');
+    });
+
     //  Activate the Tooltips
     $('[data-toggle="tooltip"], [rel="tooltip"]').tooltip();
 
