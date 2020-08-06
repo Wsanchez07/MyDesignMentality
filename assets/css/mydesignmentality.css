@@ -35,6 +35,30 @@
   font-size: 1vw;
 }
 
+.card-grow-parent {
+  position: relative;
+}
+.card-grow {
+  transition: all 0ms ease-in-out;
+  color: #FFFFFF;
+  font-size: xx-small;
+}
+.card-grow:hover {
+  /*transform: scale(1.4);*/
+  font-size: medium;
+  background-image: url('../../assets/img/black.jpeg');
+  /*opacity: 1;*/
+  /*width: ;*/
+  width: calc(90% + 0px);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
 @media only screen and (max-width: 320px) {
 
   .table-content {
