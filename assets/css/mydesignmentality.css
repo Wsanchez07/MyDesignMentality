@@ -91,6 +91,12 @@
   margin-top: 15px;
   margin-botton: 15px;
 }
+
+.img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
 @media only screen and (max-width: 320px) {
 
   .table-content {
