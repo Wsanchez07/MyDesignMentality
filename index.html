@@ -116,19 +116,19 @@
                 // UNCOMMENT FOLLOWING LINE TO MAKE TOGGLE SLIDERS WORK
                 // nowuiKit.initSliders();
             });
-            $(window).scroll(function() {
-                var aTop = $('#picutres-slideshow').height();
-                if ($(this).scrollTop() >= aTop) {
-                    if ($.cookie("WarningPopup") != null) {
-                        return ;
-                    }
-                    $.cookie('WarningPopup', 'yes', { expires: 1, path: '/' });
-                    $("#warningModal").modal('show');
-
-                    // instead of alert you can use to show your ad
-                    // something like $('#footAd').slideup();
-                }
-            });
+            // $(window).scroll(function() {
+            //     var aTop = $('#picutres-slideshow').height();
+            //     if ($(this).scrollTop() >= aTop) {
+            //         if ($.cookie("WarningPopup") != null) {
+            //             return ;
+            //         }
+            //         $.cookie('WarningPopup', 'yes', { expires: 1, path: '/' });
+            //         $("#warningModal").modal('show');
+            //
+            //         // instead of alert you can use to show your ad
+            //         // something like $('#footAd').slideup();
+            //     }
+            // });
         </script>
 
         <div id="warningModal" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
