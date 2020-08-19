@@ -84,26 +84,10 @@
         <script src="./assets/js/plugins/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
         <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
         <script src="./assets/js/now-ui-kit.js?v=1.2.0" type="text/javascript"></script>
-        <!-- cookies management -->
-        <script  type="module" src="./assets/js/cookies.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" integrity="sha512-3j3VU6WC5rPQB4Ld1jnLV7Kd5xr+cq9avvhwqzbH/taCRNURoeEpoPBK9pDyeukwSxwRPJ8fDgvYXd6SkaZ2TA==" crossorigin="anonymous"></script>
         <script type="text/javascript">
-            $(document).scroll(function (event) {
-                var Cookies = import('./assets/js/cookies.min.js');
-                //this will be scrolling pop up function here
 
-                var alto_total = $(this).scrollTop();
-                var pictureDiv = $('#picutres-slideshow').offset().top;
-
-                if (alto_total === pictureDiv && Cookies.get('ClosePopUp') != 'true' ) {
-                    $("#warningModal").modal('show');
-                }else {
-                    $("#warningModal").modal('hide');
-                }
-            });
             $(document).ready(function() {
-                import('./assets/js/cookies.min.js').then( Cookies => {
-                    Cookies.set('ClosePopUp', 'false');
-                });
                 $('#design-mentality-nav').load('navbar.html');
                 $('#splash-page').load('splashPage.html');
                 $('#about-me').load('aboutMe.html');
@@ -132,28 +116,27 @@
                 // UNCOMMENT FOLLOWING LINE TO MAKE TOGGLE SLIDERS WORK
                 // nowuiKit.initSliders();
             });
+            // $(window).scroll(function() {
+            //     var aTop = $('#picutres-slideshow').height();
+            //     if ($(this).scrollTop() >= aTop) {
+            //         if ($.cookie("WarningPopup") != null) {
+            //             return ;
+            //         }
+            //         $.cookie('WarningPopup', 'yes', { expires: 1, path: '/' });
+            //         $("#warningModal").modal('show');
+            //
+            //         // instead of alert you can use to show your ad
+            //         // something like $('#footAd').slideup();
+            //     }
+            // });
         </script>
 
         <div id="warningModal" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
-                <div class="modal-content">
+                <div class="modal-content poem-modal">
                     <button type="button" id="cross-btn" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    <div id="desk-view" class="modal-body">
-                        <div id="pop-up" class="row">
-                            <div class="right-form col-xs-7 col-sm-7">
-                                <div class="description">
-                                    This is my personal work and there are some live models.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="mobil-view" class="modal-body">
-                        <div class="pop">
-                                <div class="description">
-                                    This is my personal work and there are some live models.
-                                </div>
-
-                        </div>
+                    <div class="description">
+                        This is my personal work and there are some live models.
                     </div>
                 </div>
             </div>
