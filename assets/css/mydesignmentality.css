@@ -113,7 +113,7 @@ src: url("../../assets/fonts/Clip.ttf");
   
   
   transform: translate(-50%, -50%);
-  letter-spacing: 2;
+  letter-spacing: 3;
   left: 50%;
   top: 20%;
   font-family: "Clip";
